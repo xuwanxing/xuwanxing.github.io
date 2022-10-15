@@ -2,27 +2,81 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.xuwanxing.space/project/My_first_post/</loc>
+    
+    <lastmod>2022-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/server/maintenance/Slurm/</loc>
+    
+    <lastmod>2022-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/server/maintenance/Basic_commands/</loc>
+    
+    <lastmod>2022-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/project/software/vcftools/</loc>
+    
+    <lastmod>2022-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/project/software/bedtools/</loc>
+    
+    <lastmod>2022-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/server/maintenance/User/</loc>
+    
+    <lastmod>2022-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/server/maintenance/Samba/</loc>
+    
+    <lastmod>2022-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/server/maintenance/NIS/</loc>
+    
+    <lastmod>2022-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xuwanxing.space/about/index.html</loc>
     
     <lastmod>2022-10-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xuwanxing.space/project/My_first_post/</loc>
-    
-    <lastmod>2022-10-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xuwanxing.space/server/maintenance/Maintenance/</loc>
-    
-    <lastmod>2022-10-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -38,6 +92,27 @@
 
   
   <url>
+    <loc>https://www.xuwanxing.space/tags/Hexo/</loc>
+    <lastmod>2022-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/tags/bedtools/</loc>
+    <lastmod>2022-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/tags/vcftools/</loc>
+    <lastmod>2022-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xuwanxing.space/tags/Linux/</loc>
     <lastmod>2022-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -45,13 +120,34 @@
   </url>
   
   <url>
-    <loc>https://www.xuwanxing.space/tags/Hexo/</loc>
+    <loc>https://www.xuwanxing.space/tags/NIS/</loc>
+    <lastmod>2022-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/tags/Samba/</loc>
+    <lastmod>2022-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/tags/Slurm/</loc>
     <lastmod>2022-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
 
+  
+  <url>
+    <loc>https://www.xuwanxing.space/categories/project/</loc>
+    <lastmod>2022-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://www.xuwanxing.space/categories/server/</loc>
@@ -61,7 +157,7 @@
   </url>
   
   <url>
-    <loc>https://www.xuwanxing.space/categories/project/</loc>
+    <loc>https://www.xuwanxing.space/categories/project/software/</loc>
     <lastmod>2022-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
