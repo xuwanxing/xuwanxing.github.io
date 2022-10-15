@@ -2,8 +2,8 @@ https://www.xuwanxing.space/about/index.html
 https://www.xuwanxing.space/project/My_first_post/
 https://www.xuwanxing.space/server/maintenance/Maintenance/
 https://www.xuwanxing.space/
-https://www.xuwanxing.space/tags/Hexo/
 https://www.xuwanxing.space/tags/Linux/
-https://www.xuwanxing.space/categories/project/
+https://www.xuwanxing.space/tags/Hexo/
 https://www.xuwanxing.space/categories/server/
+https://www.xuwanxing.space/categories/project/
 https://www.xuwanxing.space/categories/server/maintenance/
