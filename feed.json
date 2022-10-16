@@ -7,18 +7,6 @@
     "home_page_url": "https://www.xuwanxing.space",
     "items": [
         {
-            "id": "https://www.xuwanxing.space/project/software/bedtools/",
-            "url": "https://www.xuwanxing.space/project/software/bedtools/",
-            "title": "bedtools",
-            "date_published": "2022-10-14T16:00:00.000Z",
-            "content_html": "<h2 id=\"compare\"><a class=\"anchor\" href=\"#compare\">#</a> Compare</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ bedtools intersect <span class=\"token parameter variable\">-a</span> f1.bed <span class=\"token parameter variable\">-b</span> f2.bed <span class=\"token parameter variable\">-wa</span> <span class=\"token parameter variable\">-wb</span> <span class=\"token operator\">|</span> bedtools groupby <span class=\"token parameter variable\">-i</span> - <span class=\"token parameter variable\">-g</span> <span class=\"token number\">1</span>-3 <span class=\"token parameter variable\">-c</span> <span class=\"token number\">7</span> <span class=\"token parameter variable\">-o</span> collapse <span class=\"token operator\">></span> final.bed</pre></td></tr></table></figure>",
-            "tags": [
-                "Project",
-                "Software",
-                "bedtools"
-            ]
-        },
-        {
             "id": "https://www.xuwanxing.space/project/software/vcftools/",
             "url": "https://www.xuwanxing.space/project/software/vcftools/",
             "title": "vcftools",
@@ -57,6 +45,30 @@
             ]
         },
         {
+            "id": "https://www.xuwanxing.space/server/maintenance/User/",
+            "url": "https://www.xuwanxing.space/server/maintenance/User/",
+            "title": "User and group",
+            "date_published": "2022-10-14T16:00:00.000Z",
+            "content_html": "<h2 id=\"create\"><a class=\"anchor\" href=\"#create\">#</a> Create</h2>\n<p># on master node</p>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ <span class=\"token function\">useradd</span> <span class=\"token parameter variable\">-m</span> <span class=\"token parameter variable\">-d</span> /public/user <span class=\"token parameter variable\">-g</span> group user</pre></td></tr><tr><td data-num=\"2\"></td><td><pre>$ <span class=\"token function\">passwd</span> user</pre></td></tr><tr><td data-num=\"3\"></td><td><pre></pre></td></tr><tr><td data-num=\"4\"></td><td><pre><span class=\"token comment\"># ssh authorized key</span></pre></td></tr><tr><td data-num=\"5\"></td><td><pre>$ <span class=\"token function\">su</span> - user</pre></td></tr><tr><td data-num=\"6\"></td><td><pre>$ ssh-keygen</pre></td></tr><tr><td data-num=\"7\"></td><td><pre>$ <span class=\"token builtin class-name\">cd</span> ~/.ssh</pre></td></tr><tr><td data-num=\"8\"></td><td><pre>$ <span class=\"token function\">cp</span> id_rsa.pub authorized_keys</pre></td></tr><tr><td data-num=\"9\"></td><td><pre>$ <span class=\"token function\">chmod</span> <span class=\"token number\">700</span> authorized_keys</pre></td></tr><tr><td data-num=\"10\"></td><td><pre></pre></td></tr><tr><td data-num=\"11\"></td><td><pre><span class=\"token comment\"># sync</span></pre></td></tr><tr><td data-num=\"12\"></td><td><pre>$ <span class=\"token builtin class-name\">cd</span> /var/yp</pre></td></tr><tr><td data-num=\"13\"></td><td><pre>$ <span class=\"token function\">make</span></pre></td></tr></table></figure><h2 id=\"delete\"><a class=\"anchor\" href=\"#delete\">#</a> Delete</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ <span class=\"token function\">userdel</span> <span class=\"token parameter variable\">-r</span> user</pre></td></tr><tr><td data-num=\"2\"></td><td><pre></pre></td></tr><tr><td data-num=\"3\"></td><td><pre><span class=\"token comment\"># from group</span></pre></td></tr><tr><td data-num=\"4\"></td><td><pre>$ gpasswd <span class=\"token parameter variable\">-d</span> user group</pre></td></tr></table></figure><h2 id=\"modify\"><a class=\"anchor\" href=\"#modify\">#</a> Modify</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token comment\"># add to group</span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre>$ <span class=\"token function\">usermod</span> <span class=\"token parameter variable\">-a</span> <span class=\"token parameter variable\">-G</span> group user</pre></td></tr><tr><td data-num=\"3\"></td><td><pre></pre></td></tr><tr><td data-num=\"4\"></td><td><pre><span class=\"token comment\"># set uid and gid</span></pre></td></tr><tr><td data-num=\"5\"></td><td><pre>$ <span class=\"token function\">usermod</span> <span class=\"token parameter variable\">-u</span> <span class=\"token number\">1111</span> testuser   </pre></td></tr><tr><td data-num=\"6\"></td><td><pre>$ <span class=\"token function\">groupmod</span> <span class=\"token parameter variable\">-g</span> <span class=\"token number\">1112</span> testgroup</pre></td></tr></table></figure>",
+            "tags": [
+                "Server",
+                "Maintenance",
+                "Linux"
+            ]
+        },
+        {
+            "id": "https://www.xuwanxing.space/project/software/bedtools/",
+            "url": "https://www.xuwanxing.space/project/software/bedtools/",
+            "title": "bedtools",
+            "date_published": "2022-10-14T16:00:00.000Z",
+            "content_html": "<h2 id=\"compare\"><a class=\"anchor\" href=\"#compare\">#</a> Compare</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ bedtools intersect <span class=\"token parameter variable\">-a</span> f1.bed <span class=\"token parameter variable\">-b</span> f2.bed <span class=\"token parameter variable\">-wa</span> <span class=\"token parameter variable\">-wb</span> <span class=\"token operator\">|</span> bedtools groupby <span class=\"token parameter variable\">-i</span> - <span class=\"token parameter variable\">-g</span> <span class=\"token number\">1</span>-3 <span class=\"token parameter variable\">-c</span> <span class=\"token number\">7</span> <span class=\"token parameter variable\">-o</span> collapse <span class=\"token operator\">></span> final.bed</pre></td></tr></table></figure>",
+            "tags": [
+                "Project",
+                "Software",
+                "bedtools"
+            ]
+        },
+        {
             "id": "https://www.xuwanxing.space/server/maintenance/Slurm/",
             "url": "https://www.xuwanxing.space/server/maintenance/Slurm/",
             "title": "Slurm",
@@ -67,18 +79,6 @@
                 "Maintenance",
                 "Linux",
                 "Slurm"
-            ]
-        },
-        {
-            "id": "https://www.xuwanxing.space/server/maintenance/User/",
-            "url": "https://www.xuwanxing.space/server/maintenance/User/",
-            "title": "User and group",
-            "date_published": "2022-10-14T16:00:00.000Z",
-            "content_html": "<h2 id=\"create\"><a class=\"anchor\" href=\"#create\">#</a> Create</h2>\n<p># on master node</p>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ <span class=\"token function\">useradd</span> <span class=\"token parameter variable\">-m</span> <span class=\"token parameter variable\">-d</span> /public/user <span class=\"token parameter variable\">-g</span> group user</pre></td></tr><tr><td data-num=\"2\"></td><td><pre>$ <span class=\"token function\">passwd</span> user</pre></td></tr><tr><td data-num=\"3\"></td><td><pre></pre></td></tr><tr><td data-num=\"4\"></td><td><pre><span class=\"token comment\"># ssh authorized key</span></pre></td></tr><tr><td data-num=\"5\"></td><td><pre>$ <span class=\"token function\">su</span> - user</pre></td></tr><tr><td data-num=\"6\"></td><td><pre>$ ssh-keygen</pre></td></tr><tr><td data-num=\"7\"></td><td><pre>$ <span class=\"token builtin class-name\">cd</span> ~/.ssh</pre></td></tr><tr><td data-num=\"8\"></td><td><pre>$ <span class=\"token function\">cp</span> id_rsa.pub authorized_keys</pre></td></tr><tr><td data-num=\"9\"></td><td><pre>$ <span class=\"token function\">chmod</span> <span class=\"token number\">700</span> authorized_keys</pre></td></tr><tr><td data-num=\"10\"></td><td><pre></pre></td></tr><tr><td data-num=\"11\"></td><td><pre><span class=\"token comment\"># sync</span></pre></td></tr><tr><td data-num=\"12\"></td><td><pre>$ <span class=\"token builtin class-name\">cd</span> /var/yp</pre></td></tr><tr><td data-num=\"13\"></td><td><pre>$ <span class=\"token function\">make</span></pre></td></tr></table></figure><h2 id=\"delete\"><a class=\"anchor\" href=\"#delete\">#</a> Delete</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ <span class=\"token function\">userdel</span> <span class=\"token parameter variable\">-r</span> user</pre></td></tr><tr><td data-num=\"2\"></td><td><pre></pre></td></tr><tr><td data-num=\"3\"></td><td><pre><span class=\"token comment\"># from group</span></pre></td></tr><tr><td data-num=\"4\"></td><td><pre>$ gpasswd <span class=\"token parameter variable\">-d</span> user group</pre></td></tr></table></figure><h2 id=\"modify\"><a class=\"anchor\" href=\"#modify\">#</a> Modify</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token comment\"># add to group</span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre>$ <span class=\"token function\">usermod</span> <span class=\"token parameter variable\">-a</span> <span class=\"token parameter variable\">-G</span> group user</pre></td></tr><tr><td data-num=\"3\"></td><td><pre></pre></td></tr><tr><td data-num=\"4\"></td><td><pre><span class=\"token comment\"># set uid and gid</span></pre></td></tr><tr><td data-num=\"5\"></td><td><pre>$ <span class=\"token function\">usermod</span> <span class=\"token parameter variable\">-u</span> <span class=\"token number\">1111</span> testuser   </pre></td></tr><tr><td data-num=\"6\"></td><td><pre>$ <span class=\"token function\">groupmod</span> <span class=\"token parameter variable\">-g</span> <span class=\"token number\">1112</span> testgroup</pre></td></tr></table></figure>",
-            "tags": [
-                "Server",
-                "Maintenance",
-                "Linux"
             ]
         },
         {
