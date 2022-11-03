@@ -1,6 +1,6 @@
-https://www.xuwanxing.space/server/maintenance/Slurm/
 https://www.xuwanxing.space/about/index.html
 https://www.xuwanxing.space/project/software/vcftools/
+https://www.xuwanxing.space/server/maintenance/Slurm/
 https://www.xuwanxing.space/project/My_first_post/
 https://www.xuwanxing.space/server/maintenance/Basic_commands/
 https://www.xuwanxing.space/project/software/bedtools/
@@ -8,12 +8,12 @@ https://www.xuwanxing.space/server/maintenance/User/
 https://www.xuwanxing.space/server/maintenance/Samba/
 https://www.xuwanxing.space/server/maintenance/NIS/
 https://www.xuwanxing.space/
-https://www.xuwanxing.space/tags/bedtools/
 https://www.xuwanxing.space/tags/Hexo/
-https://www.xuwanxing.space/tags/vcftools/
 https://www.xuwanxing.space/tags/Linux/
 https://www.xuwanxing.space/tags/NIS/
 https://www.xuwanxing.space/tags/Samba/
+https://www.xuwanxing.space/tags/vcftools/
+https://www.xuwanxing.space/tags/bedtools/
 https://www.xuwanxing.space/tags/Slurm/
 https://www.xuwanxing.space/categories/project/
 https://www.xuwanxing.space/categories/server/
