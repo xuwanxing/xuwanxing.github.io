@@ -8,9 +8,9 @@ https://www.xuwanxing.space/server/maintenance/User/
 https://www.xuwanxing.space/server/maintenance/Samba/
 https://www.xuwanxing.space/server/maintenance/NIS/
 https://www.xuwanxing.space/
-https://www.xuwanxing.space/tags/Hexo/
 https://www.xuwanxing.space/tags/bedtools/
 https://www.xuwanxing.space/tags/vcftools/
+https://www.xuwanxing.space/tags/Hexo/
 https://www.xuwanxing.space/tags/Linux/
 https://www.xuwanxing.space/tags/Samba/
 https://www.xuwanxing.space/tags/NIS/
