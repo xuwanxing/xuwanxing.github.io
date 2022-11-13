@@ -99,13 +99,6 @@
   </url>
   
   <url>
-    <loc>https://www.xuwanxing.space/tags/bedtools/</loc>
-    <lastmod>2022-11-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xuwanxing.space/tags/vcftools/</loc>
     <lastmod>2022-11-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -120,6 +113,13 @@
   </url>
   
   <url>
+    <loc>https://www.xuwanxing.space/tags/bedtools/</loc>
+    <lastmod>2022-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xuwanxing.space/tags/NIS/</loc>
     <lastmod>2022-11-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -127,14 +127,14 @@
   </url>
   
   <url>
-    <loc>https://www.xuwanxing.space/tags/Slurm/</loc>
+    <loc>https://www.xuwanxing.space/tags/Samba/</loc>
     <lastmod>2022-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.xuwanxing.space/tags/Samba/</loc>
+    <loc>https://www.xuwanxing.space/tags/Slurm/</loc>
     <lastmod>2022-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

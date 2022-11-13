@@ -9,12 +9,12 @@ https://www.xuwanxing.space/server/maintenance/Samba/
 https://www.xuwanxing.space/server/maintenance/NIS/
 https://www.xuwanxing.space/
 https://www.xuwanxing.space/tags/Hexo/
-https://www.xuwanxing.space/tags/bedtools/
 https://www.xuwanxing.space/tags/vcftools/
 https://www.xuwanxing.space/tags/Linux/
+https://www.xuwanxing.space/tags/bedtools/
 https://www.xuwanxing.space/tags/NIS/
-https://www.xuwanxing.space/tags/Slurm/
 https://www.xuwanxing.space/tags/Samba/
+https://www.xuwanxing.space/tags/Slurm/
 https://www.xuwanxing.space/categories/project/
 https://www.xuwanxing.space/categories/server/
 https://www.xuwanxing.space/categories/project/software/
