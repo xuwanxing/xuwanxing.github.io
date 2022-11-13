@@ -36,22 +36,6 @@
         <updated>2022-10-14T16:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.xuwanxing.space/server/maintenance/Samba/</id>
-        <title>Samba</title>
-        <link rel="alternate" href="https://www.xuwanxing.space/server/maintenance/Samba/"/>
-        <content type="html">&lt;h2 id=&#34;add-new-user&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#add-new-user&#34;&gt;#&lt;/a&gt; Add new user&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ smbpasswd &lt;span class=&#34;token parameter variable&#34;&gt;-a&lt;/span&gt; username&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzc3lnMjAxMS9hcnRpY2xlL2RldGFpbHMvMTA2OTM1NDk0&#34;&gt;Reference1&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;backup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#backup&#34;&gt;#&lt;/a&gt; Backup&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;rsync&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-av&lt;/span&gt; /etc/samba/ /etc/samba.old/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;rpm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-qa&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;grep&lt;/span&gt; samba&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;rpm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-e&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;--nodeps&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; package &lt;span class=&#34;token comment&#34;&gt;# don&#39;t verify package dependencies (optional)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;recycle-function&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#recycle-function&#34;&gt;#&lt;/a&gt; Recycle function&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NtenN0ZXZlbi9hcnRpY2xlL2RldGFpbHMvNDkwNDkzNzM=&#34;&gt;Reference2&lt;/span&gt;&lt;/p&gt;
-</content>
-        <category term="Server" scheme="https://www.xuwanxing.space/categories/server/" />
-        <category term="Maintenance" scheme="https://www.xuwanxing.space/categories/server/maintenance/" />
-        <category term="Linux" scheme="https://www.xuwanxing.space/tags/Linux/" />
-        <category term="Samba" scheme="https://www.xuwanxing.space/tags/Samba/" />
-        <updated>2022-10-14T16:00:00.000Z</updated>
-    </entry>
-    <entry>
         <id>https://www.xuwanxing.space/server/maintenance/User/</id>
         <title>User and group</title>
         <link rel="alternate" href="https://www.xuwanxing.space/server/maintenance/User/"/>
@@ -148,6 +132,22 @@
         <category term="Maintenance" scheme="https://www.xuwanxing.space/categories/server/maintenance/" />
         <category term="Linux" scheme="https://www.xuwanxing.space/tags/Linux/" />
         <category term="Slurm" scheme="https://www.xuwanxing.space/tags/Slurm/" />
+        <updated>2022-10-14T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://www.xuwanxing.space/server/maintenance/Samba/</id>
+        <title>Samba</title>
+        <link rel="alternate" href="https://www.xuwanxing.space/server/maintenance/Samba/"/>
+        <content type="html">&lt;h2 id=&#34;add-new-user&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#add-new-user&#34;&gt;#&lt;/a&gt; Add new user&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ smbpasswd &lt;span class=&#34;token parameter variable&#34;&gt;-a&lt;/span&gt; username&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzc3lnMjAxMS9hcnRpY2xlL2RldGFpbHMvMTA2OTM1NDk0&#34;&gt;Reference1&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;backup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#backup&#34;&gt;#&lt;/a&gt; Backup&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;rsync&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-av&lt;/span&gt; /etc/samba/ /etc/samba.old/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;rpm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-qa&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;grep&lt;/span&gt; samba&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;rpm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-e&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;--nodeps&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; package &lt;span class=&#34;token comment&#34;&gt;# don&#39;t verify package dependencies (optional)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;recycle-function&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#recycle-function&#34;&gt;#&lt;/a&gt; Recycle function&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NtenN0ZXZlbi9hcnRpY2xlL2RldGFpbHMvNDkwNDkzNzM=&#34;&gt;Reference2&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="Server" scheme="https://www.xuwanxing.space/categories/server/" />
+        <category term="Maintenance" scheme="https://www.xuwanxing.space/categories/server/maintenance/" />
+        <category term="Linux" scheme="https://www.xuwanxing.space/tags/Linux/" />
+        <category term="Samba" scheme="https://www.xuwanxing.space/tags/Samba/" />
         <updated>2022-10-14T16:00:00.000Z</updated>
     </entry>
     <entry>

@@ -31,19 +31,6 @@
             ]
         },
         {
-            "id": "https://www.xuwanxing.space/server/maintenance/Samba/",
-            "url": "https://www.xuwanxing.space/server/maintenance/Samba/",
-            "title": "Samba",
-            "date_published": "2022-10-14T16:00:00.000Z",
-            "content_html": "<h2 id=\"add-new-user\"><a class=\"anchor\" href=\"#add-new-user\">#</a> Add new user</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ smbpasswd <span class=\"token parameter variable\">-a</span> username</pre></td></tr></table></figure><p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzc3lnMjAxMS9hcnRpY2xlL2RldGFpbHMvMTA2OTM1NDk0\">Reference1</span></p>\n<h2 id=\"backup\"><a class=\"anchor\" href=\"#backup\">#</a> Backup</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ <span class=\"token function\">rsync</span> <span class=\"token parameter variable\">-av</span> /etc/samba/ /etc/samba.old/</pre></td></tr><tr><td data-num=\"2\"></td><td><pre>$ <span class=\"token function\">rpm</span> <span class=\"token parameter variable\">-qa</span> <span class=\"token operator\">|</span><span class=\"token function\">grep</span> samba</pre></td></tr><tr><td data-num=\"3\"></td><td><pre>$ <span class=\"token function\">rpm</span> <span class=\"token parameter variable\">-e</span> <span class=\"token punctuation\">(</span>--nodeps<span class=\"token punctuation\">)</span> package <span class=\"token comment\"># don't verify package dependencies (optional)</span></pre></td></tr></table></figure><h2 id=\"recycle-function\"><a class=\"anchor\" href=\"#recycle-function\">#</a> Recycle function</h2>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NtenN0ZXZlbi9hcnRpY2xlL2RldGFpbHMvNDkwNDkzNzM=\">Reference2</span></p>\n",
-            "tags": [
-                "Server",
-                "Maintenance",
-                "Linux",
-                "Samba"
-            ]
-        },
-        {
             "id": "https://www.xuwanxing.space/server/maintenance/User/",
             "url": "https://www.xuwanxing.space/server/maintenance/User/",
             "title": "User and group",
@@ -79,6 +66,19 @@
                 "Maintenance",
                 "Linux",
                 "Slurm"
+            ]
+        },
+        {
+            "id": "https://www.xuwanxing.space/server/maintenance/Samba/",
+            "url": "https://www.xuwanxing.space/server/maintenance/Samba/",
+            "title": "Samba",
+            "date_published": "2022-10-14T16:00:00.000Z",
+            "content_html": "<h2 id=\"add-new-user\"><a class=\"anchor\" href=\"#add-new-user\">#</a> Add new user</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ smbpasswd <span class=\"token parameter variable\">-a</span> username</pre></td></tr></table></figure><p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzc3lnMjAxMS9hcnRpY2xlL2RldGFpbHMvMTA2OTM1NDk0\">Reference1</span></p>\n<h2 id=\"backup\"><a class=\"anchor\" href=\"#backup\">#</a> Backup</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ <span class=\"token function\">rsync</span> <span class=\"token parameter variable\">-av</span> /etc/samba/ /etc/samba.old/</pre></td></tr><tr><td data-num=\"2\"></td><td><pre>$ <span class=\"token function\">rpm</span> <span class=\"token parameter variable\">-qa</span> <span class=\"token operator\">|</span><span class=\"token function\">grep</span> samba</pre></td></tr><tr><td data-num=\"3\"></td><td><pre>$ <span class=\"token function\">rpm</span> <span class=\"token parameter variable\">-e</span> <span class=\"token punctuation\">(</span>--nodeps<span class=\"token punctuation\">)</span> package <span class=\"token comment\"># don't verify package dependencies (optional)</span></pre></td></tr></table></figure><h2 id=\"recycle-function\"><a class=\"anchor\" href=\"#recycle-function\">#</a> Recycle function</h2>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NtenN0ZXZlbi9hcnRpY2xlL2RldGFpbHMvNDkwNDkzNzM=\">Reference2</span></p>\n",
+            "tags": [
+                "Server",
+                "Maintenance",
+                "Linux",
+                "Samba"
             ]
         },
         {
