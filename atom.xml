@@ -8,17 +8,67 @@
     <author>
       <name>Wanxing Xu</name>
     </author>
-    <updated>2022-10-14T16:00:00.000Z</updated>
+    <updated>2022-12-21T16:00:00.000Z</updated>
+    <entry>
+        <id>https://www.xuwanxing.space/project/software/aliyun_baiduyun/</id>
+        <title>Aliyun &amp; Baiduyun</title>
+        <link rel="alternate" href="https://www.xuwanxing.space/project/software/aliyun_baiduyun/"/>
+        <content type="html">&lt;h2 id=&#34;Aliyun&#34;&gt;&lt;a href=&#34;#Aliyun&#34; class=&#34;headerlink&#34; title=&#34;Aliyun&#34;&gt;&lt;/a&gt;Aliyun&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Download and install&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;See &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3RpY2tzdGVwL2FsaXl1bnBhbi9yZWxlYXNlcw==&#34;&gt;github&lt;/span&gt;. Should choose “amd64&amp;#x2F;x64”.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Login&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ aliyunpan &amp;gt; login
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Should type “RefreshToken” here. (&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy4zNjBkb2MuY29tL2NvbnRlbnQvMjIvMDQyMy8wOS83NjE0OTY5N18xMDI3ODU3NjU2LnNodG1s&#34;&gt;Howto&lt;/span&gt;)&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Usage&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ aliyunpan &amp;gt; download &amp;lt;path to directory or file&amp;gt;
+$ aliyunpan &amp;gt; upload &amp;lt;path to directory or file&amp;gt; &amp;lt;remote directory&amp;gt;
+$ aliyunpan &amp;gt; logout
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;Baiduyun&#34;&gt;&lt;a href=&#34;#Baiduyun&#34; class=&#34;headerlink&#34; title=&#34;Baiduyun&#34;&gt;&lt;/a&gt;Baiduyun&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Install&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;See &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hvdXRpYW56ZS9ieXB5&#34;&gt;github&lt;/span&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ pip install bypy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Usage&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ bypy info # verification
+$ bypy list
+$ bypy downdir / # or syncdown
+$ bypy upload # or syncup
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        <category term="Project" scheme="https://www.xuwanxing.space/categories/project/" />
+        <category term="Software" scheme="https://www.xuwanxing.space/categories/project/software/" />
+        <category term="aliyun" scheme="https://www.xuwanxing.space/tags/aliyun/" />
+        <category term="baiduyun" scheme="https://www.xuwanxing.space/tags/baiduyun/" />
+        <updated>2022-12-21T16:00:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://www.xuwanxing.space/project/software/vcftools/</id>
         <title>vcftools</title>
         <link rel="alternate" href="https://www.xuwanxing.space/project/software/vcftools/"/>
-        <content type="html">&lt;h2 id=&#34;useful-commands&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#useful-commands&#34;&gt;#&lt;/a&gt; Useful commands&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ vcftools &lt;span class=&#34;token parameter variable&#34;&gt;--gzvcf&lt;/span&gt; input.vcf.gz &lt;span class=&#34;token parameter variable&#34;&gt;--keep&lt;/span&gt; id.txt &lt;span class=&#34;token parameter variable&#34;&gt;--recode&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--stdout&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;gzip&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-c&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; out.vcf.gz&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ vcftools &lt;span class=&#34;token parameter variable&#34;&gt;--gzvcf&lt;/span&gt; input.vcf.gz &lt;span class=&#34;token parameter variable&#34;&gt;--positions&lt;/span&gt; SNP_list.txt &lt;span class=&#34;token parameter variable&#34;&gt;--out&lt;/span&gt; nucleotide_diversity&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ vcftools &lt;span class=&#34;token parameter variable&#34;&gt;--gzvcf&lt;/span&gt; input.vcf.gz &lt;span class=&#34;token parameter variable&#34;&gt;--chr&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; --from-bp a --to-bp b &lt;span class=&#34;token parameter variable&#34;&gt;--recode&lt;/span&gt; --recode-INFO-all &lt;span class=&#34;token parameter variable&#34;&gt;--out&lt;/span&gt; chr1_analysis&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ vcftools &lt;span class=&#34;token parameter variable&#34;&gt;--gzvcf&lt;/span&gt; input.vcf.gz &lt;span class=&#34;token parameter variable&#34;&gt;--freq&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--out&lt;/span&gt; freq_analysis&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ vcf-compare first.vcf.gz second.vcf.gz&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;hr /&gt;
-&lt;h2 id=&#34;issues&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#issues&#34;&gt;#&lt;/a&gt; Issues&lt;/h2&gt;
-&lt;p&gt;⚠️ &lt;strong&gt;Error&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token string&#34;&gt;&#34;Can&#39;t locate Vcf.pm in @INC&#34;&lt;/span&gt; when using perl-vcf modules&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;🔧 &lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token builtin class-name&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token assign-left variable&#34;&gt;PERL5LIB&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;/path to vcftools/share/perl5&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <content type="html">&lt;h2 id=&#34;Useful-commands&#34;&gt;&lt;a href=&#34;#Useful-commands&#34; class=&#34;headerlink&#34; title=&#34;Useful commands&#34;&gt;&lt;/a&gt;Useful commands&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ vcftools --gzvcf input.vcf.gz --keep id.txt --recode --stdout | gzip -c &amp;gt; out.vcf.gz
+$ vcftools --gzvcf input.vcf.gz --positions SNP_list.txt --out nucleotide_diversity
+$ vcftools --gzvcf input.vcf.gz --chr 1 --from-bp a --to-bp b --recode --recode-INFO-all --out chr1_analysis
+$ vcftools --gzvcf input.vcf.gz --freq --out freq_analysis
+$ vcf-compare first.vcf.gz second.vcf.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;Issues&#34;&gt;&lt;a href=&#34;#Issues&#34; class=&#34;headerlink&#34; title=&#34;Issues&#34;&gt;&lt;/a&gt;Issues&lt;/h2&gt;&lt;p&gt;⚠️ &lt;strong&gt;Error&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;&amp;quot;Can&amp;#39;t locate Vcf.pm in @INC&amp;quot; when using perl-vcf modules
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;🔧 &lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ export PERL5LIB=/path to vcftools/share/perl5
+&lt;/code&gt;&lt;/pre&gt;
+</content>
         <category term="Project" scheme="https://www.xuwanxing.space/categories/project/" />
         <category term="Software" scheme="https://www.xuwanxing.space/categories/project/software/" />
         <category term="vcftools" scheme="https://www.xuwanxing.space/tags/vcftools/" />
@@ -28,8 +78,9 @@
         <id>https://www.xuwanxing.space/project/software/bedtools/</id>
         <title>bedtools</title>
         <link rel="alternate" href="https://www.xuwanxing.space/project/software/bedtools/"/>
-        <content type="html">&lt;h2 id=&#34;compare&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#compare&#34;&gt;#&lt;/a&gt; Compare&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ bedtools intersect &lt;span class=&#34;token parameter variable&#34;&gt;-a&lt;/span&gt; f1.bed &lt;span class=&#34;token parameter variable&#34;&gt;-b&lt;/span&gt; f2.bed &lt;span class=&#34;token parameter variable&#34;&gt;-wa&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-wb&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; bedtools groupby &lt;span class=&#34;token parameter variable&#34;&gt;-i&lt;/span&gt; - &lt;span class=&#34;token parameter variable&#34;&gt;-g&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;-3 &lt;span class=&#34;token parameter variable&#34;&gt;-c&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;7&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-o&lt;/span&gt; collapse &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; final.bed&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <content type="html">&lt;h2 id=&#34;Compare&#34;&gt;&lt;a href=&#34;#Compare&#34; class=&#34;headerlink&#34; title=&#34;Compare&#34;&gt;&lt;/a&gt;Compare&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ bedtools intersect -a f1.bed -b f2.bed -wa -wb | bedtools groupby -i - -g 1-3 -c 7 -o collapse &amp;gt; final.bed
+&lt;/code&gt;&lt;/pre&gt;
+</content>
         <category term="Project" scheme="https://www.xuwanxing.space/categories/project/" />
         <category term="Software" scheme="https://www.xuwanxing.space/categories/project/software/" />
         <category term="bedtools" scheme="https://www.xuwanxing.space/tags/bedtools/" />
@@ -39,30 +90,70 @@
         <id>https://www.xuwanxing.space/server/maintenance/NIS/</id>
         <title>NIS</title>
         <link rel="alternate" href="https://www.xuwanxing.space/server/maintenance/NIS/"/>
-        <content type="html">&lt;h2 id=&#34;rename-folder&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#rename-folder&#34;&gt;#&lt;/a&gt; Rename folder&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;umount&lt;/span&gt; /oldfolder&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;mv&lt;/span&gt; /oldfolder/ /newfolder&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;mount&lt;/span&gt; /dev&lt;span class=&#34;token punctuation&#34;&gt;..&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;..&lt;/span&gt;   /newfolder&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;vim&lt;/span&gt; /etc/fstab&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;configuration&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#configuration&#34;&gt;#&lt;/a&gt; Configuration&lt;/h2&gt;
-&lt;ol&gt;
+        <content type="html">&lt;h2 id=&#34;Rename-folder&#34;&gt;&lt;a href=&#34;#Rename-folder&#34; class=&#34;headerlink&#34; title=&#34;Rename folder&#34;&gt;&lt;/a&gt;Rename folder&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ umount /oldfolder
+$ mv /oldfolder/ /newfolder
+$ mount /dev....   /newfolder
+$ vim /etc/fstab
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;Configuration&#34;&gt;&lt;a href=&#34;#Configuration&#34; class=&#34;headerlink&#34; title=&#34;Configuration&#34;&gt;&lt;/a&gt;Configuration&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;Install&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ yum &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; ypbind yp-tools&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ yum install ypbind yp-tools
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Modify&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;vim&lt;/span&gt; /etc/sysconfig/network&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# add&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token assign-left variable&#34;&gt;NISDOMAIN&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;nisdomain&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ vim /etc/sysconfig/network
+
+# add
+NISDOMAIN=nisdomain
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Modify2&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;vim&lt;/span&gt; /etc/nsswitch.conf&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# edit&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;passwd:     nis files sss&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;shadow:     nis files sss&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;group:      nis files sss&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hosts:      nis files dns myhostname&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ vim /etc/nsswitch.conf
+
+# edit
+passwd:     nis files sss
+shadow:     nis files sss
+group:      nis files sss
+
+hosts:      nis files dns myhostname
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Modify3&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;vim&lt;/span&gt; /etc/yp.conf&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# add&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;domain nisdomain server master-node&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ vim /etc/yp.conf
+
+# add
+domain nisdomain server master-node
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;Modify4&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;vim&lt;/span&gt; /etc/sysconfig/authconfig&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# edit&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token assign-left variable&#34;&gt;USENIS&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;yes&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ vim /etc/sysconfig/authconfig
+
+# edit
+USENIS=yes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;Modify5&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;vim&lt;/span&gt; /etc/pam.d/system-auth&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# add&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;session     optional      pam_mkhomedir.so &lt;span class=&#34;token assign-left variable&#34;&gt;skel&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;/etc/skel &lt;span class=&#34;token assign-left variable&#34;&gt;umask&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;077&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;7&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ vim /etc/pam.d/system-auth
+
+# add
+session     optional      pam_mkhomedir.so skel=/etc/skel umask=077
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;Final&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl start rpcbind&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl start ypbind&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl &lt;span class=&#34;token builtin class-name&#34;&gt;enable&lt;/span&gt; rpcbind&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl &lt;span class=&#34;token builtin class-name&#34;&gt;enable&lt;/span&gt; ypbind&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZmVlLmltLzIwMTkvMDMvaW5zdGFsbC1uaXMtb24tY2VudG9zNy8=&#34;&gt;Reference&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ systemctl start rpcbind
+$ systemctl start ypbind
+
+$ systemctl enable rpcbind
+$ systemctl enable ypbind
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZmVlLmltLzIwMTkvMDMvaW5zdGFsbC1uaXMtb24tY2VudG9zNy8=&#34;&gt;Reference&lt;/span&gt;&lt;/p&gt;
 </content>
         <category term="Server" scheme="https://www.xuwanxing.space/categories/server/" />
         <category term="Maintenance" scheme="https://www.xuwanxing.space/categories/server/maintenance/" />
@@ -71,14 +162,54 @@
         <updated>2022-10-14T16:00:00.000Z</updated>
     </entry>
     <entry>
+        <id>https://www.xuwanxing.space/server/maintenance/User/</id>
+        <title>User and group</title>
+        <link rel="alternate" href="https://www.xuwanxing.space/server/maintenance/User/"/>
+        <content type="html">&lt;h2 id=&#34;Create&#34;&gt;&lt;a href=&#34;#Create&#34; class=&#34;headerlink&#34; title=&#34;Create&#34;&gt;&lt;/a&gt;Create&lt;/h2&gt;&lt;p&gt;# on master node&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ useradd -m -d /public/user -g group user
+$ passwd user
+
+# ssh authorized key
+$ su - user
+$ ssh-keygen
+$ cd ~/.ssh
+$ cp id_rsa.pub authorized_keys
+$ chmod 700 authorized_keys
+
+# sync
+$ cd /var/yp
+$ make
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;Delete&#34;&gt;&lt;a href=&#34;#Delete&#34; class=&#34;headerlink&#34; title=&#34;Delete&#34;&gt;&lt;/a&gt;Delete&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ userdel -r user
+
+# from group
+$ gpasswd -d user group
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;Modify&#34;&gt;&lt;a href=&#34;#Modify&#34; class=&#34;headerlink&#34; title=&#34;Modify&#34;&gt;&lt;/a&gt;Modify&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;# add to group
+$ usermod -a -G group user
+
+# set uid and gid
+$ usermod -u 1111 testuser   
+$ groupmod -g 1112 testgroup
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        <category term="Server" scheme="https://www.xuwanxing.space/categories/server/" />
+        <category term="Maintenance" scheme="https://www.xuwanxing.space/categories/server/maintenance/" />
+        <category term="Linux" scheme="https://www.xuwanxing.space/tags/Linux/" />
+        <updated>2022-10-14T16:00:00.000Z</updated>
+    </entry>
+    <entry>
         <id>https://www.xuwanxing.space/server/maintenance/Samba/</id>
         <title>Samba</title>
         <link rel="alternate" href="https://www.xuwanxing.space/server/maintenance/Samba/"/>
-        <content type="html">&lt;h2 id=&#34;add-new-user&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#add-new-user&#34;&gt;#&lt;/a&gt; Add new user&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ smbpasswd &lt;span class=&#34;token parameter variable&#34;&gt;-a&lt;/span&gt; username&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzc3lnMjAxMS9hcnRpY2xlL2RldGFpbHMvMTA2OTM1NDk0&#34;&gt;Reference1&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;backup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#backup&#34;&gt;#&lt;/a&gt; Backup&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;rsync&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-av&lt;/span&gt; /etc/samba/ /etc/samba.old/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;rpm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-qa&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;grep&lt;/span&gt; samba&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;rpm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-e&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;--nodeps&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; package &lt;span class=&#34;token comment&#34;&gt;# don&#39;t verify package dependencies (optional)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;recycle-function&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#recycle-function&#34;&gt;#&lt;/a&gt; Recycle function&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NtenN0ZXZlbi9hcnRpY2xlL2RldGFpbHMvNDkwNDkzNzM=&#34;&gt;Reference2&lt;/span&gt;&lt;/p&gt;
+        <content type="html">&lt;h2 id=&#34;Add-new-user&#34;&gt;&lt;a href=&#34;#Add-new-user&#34; class=&#34;headerlink&#34; title=&#34;Add new user&#34;&gt;&lt;/a&gt;Add new user&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ smbpasswd -a username
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xzc3lnMjAxMS9hcnRpY2xlL2RldGFpbHMvMTA2OTM1NDk0&#34;&gt;Reference1&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Backup&#34;&gt;&lt;a href=&#34;#Backup&#34; class=&#34;headerlink&#34; title=&#34;Backup&#34;&gt;&lt;/a&gt;Backup&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ rsync -av /etc/samba/ /etc/samba.old/
+$ rpm -qa |grep samba
+$ rpm -e (--nodeps) package # don&amp;#39;t verify package dependencies (optional)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;Recycle-function&#34;&gt;&lt;a href=&#34;#Recycle-function&#34; class=&#34;headerlink&#34; title=&#34;Recycle function&#34;&gt;&lt;/a&gt;Recycle function&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NtenN0ZXZlbi9hcnRpY2xlL2RldGFpbHMvNDkwNDkzNzM=&#34;&gt;Reference2&lt;/span&gt;&lt;/p&gt;
 </content>
         <category term="Server" scheme="https://www.xuwanxing.space/categories/server/" />
         <category term="Maintenance" scheme="https://www.xuwanxing.space/categories/server/maintenance/" />
@@ -90,46 +221,102 @@
         <id>https://www.xuwanxing.space/server/maintenance/Slurm/</id>
         <title>Slurm</title>
         <link rel="alternate" href="https://www.xuwanxing.space/server/maintenance/Slurm/"/>
-        <content type="html">&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;Continue updating.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;fix-drain-status&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#fix-drain-status&#34;&gt;#&lt;/a&gt; Fix &amp;quot;drain&amp;quot; status&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;scontrol update &lt;span class=&#34;token assign-left variable&#34;&gt;nodename&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;nodeXX &lt;span class=&#34;token assign-left variable&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;resume&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvNTcxNDQ2MDIvcmVzdGFydC1ub2Rlcy1pbi1zdGF0ZS1kb3du&#34;&gt;Reference1&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;restart&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#restart&#34;&gt;#&lt;/a&gt; Restart&lt;/h2&gt;
-&lt;p&gt;# on master node&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl restart slurmctld.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl restart slurmdbd.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl restart slurmd.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;# on slave node&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl restart slurmd.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;upgrade&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#upgrade&#34;&gt;#&lt;/a&gt; Upgrade&lt;/h2&gt;
-&lt;p&gt;# on master node&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl stop slurmdbd.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl stop slurmctld.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl stop slurmd.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;# on slave node&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl stop slurmd.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;# on master node, make backup of database and old config files&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ mysqldump &lt;span class=&#34;token parameter variable&#34;&gt;-p&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--databases&lt;/span&gt; slurm_acct_db &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; backup.sql &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;path: /root&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;mkdir&lt;/span&gt; old_slurm&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;cp&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-r&lt;/span&gt; /etc/slurm/* /root/old_slurm&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;# all nodes upgrade&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# conda deactivate, clean environment&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# echo $LD_LIBRARY_PATH [*]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# unset LD_LIBRARY_PATH [*]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# export PATH=/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/bin:/root/bin [*]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# yum --disablerepo=&#39;*&#39; localinstall libaec-1.0.4-1.el7.x86_64.rpm libaec-devel-1.0.4-1.el7.x86_64.rpm hdf5-devel-1.8.12-12.el7.x86_64.rpm hdf5-1.8.12-12.el7.x86_64.rpm &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ rpmbuild &lt;span class=&#34;token parameter variable&#34;&gt;-ta&lt;/span&gt; slurm-*.tar.bz2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;rpm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--upgrade&lt;/span&gt; *.rpm &lt;span class=&#34;token comment&#34;&gt;# for downgrade, use &#34;rpm -Uvh --oldpackage *.rpm&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ yum &lt;span class=&#34;token parameter variable&#34;&gt;--disablerepo&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;*&#39;&lt;/span&gt; list slurm&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# &#34;[*]&#34; maybe necessary&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;pam&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pam&#34;&gt;#&lt;/a&gt; Pam&lt;/h2&gt;
-&lt;ol&gt;
+        <content type="html">&lt;p&gt;:::info&lt;br&gt;Continue updating.&lt;br&gt;:::&lt;/p&gt;
+&lt;h2 id=&#34;Fix-“drain”-status&#34;&gt;&lt;a href=&#34;#Fix-“drain”-status&#34; class=&#34;headerlink&#34; title=&#34;Fix “drain” status&#34;&gt;&lt;/a&gt;Fix “drain” status&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;scontrol update nodename=nodeXX state=resume
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvNTcxNDQ2MDIvcmVzdGFydC1ub2Rlcy1pbi1zdGF0ZS1kb3du&#34;&gt;Reference1&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Restart&#34;&gt;&lt;a href=&#34;#Restart&#34; class=&#34;headerlink&#34; title=&#34;Restart&#34;&gt;&lt;/a&gt;Restart&lt;/h2&gt;&lt;p&gt;# on master node&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ systemctl restart slurmctld.service
+$ systemctl restart slurmdbd.service
+$ systemctl restart slurmd.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;# on slave node&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ systemctl restart slurmd.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;Upgrade&#34;&gt;&lt;a href=&#34;#Upgrade&#34; class=&#34;headerlink&#34; title=&#34;Upgrade&#34;&gt;&lt;/a&gt;Upgrade&lt;/h2&gt;&lt;p&gt;# on master node&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ systemctl stop slurmdbd.service
+$ systemctl stop slurmctld.service
+$ systemctl stop slurmd.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;# on slave node&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ systemctl stop slurmd.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;# on master node, make backup of database and old config files&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ mysqldump -p --databases slurm_acct_db &amp;gt; backup.sql (path: /root)
+
+$ mkdir old_slurm
+$ cp -r /etc/slurm/* /root/old_slurm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;# all nodes upgrade&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;# conda deactivate, clean environment
+# echo $LD_LIBRARY_PATH [*]
+# unset LD_LIBRARY_PATH [*]
+# export PATH=/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/bin:/root/bin [*]
+# yum --disablerepo=&amp;#39;*&amp;#39; localinstall libaec-1.0.4-1.el7.x86_64.rpm libaec-devel-1.0.4-1.el7.x86_64.rpm hdf5-devel-1.8.12-12.el7.x86_64.rpm hdf5-1.8.12-12.el7.x86_64.rpm 
+$ rpmbuild -ta slurm-*.tar.bz2
+$ rpm --upgrade *.rpm # for downgrade, use &amp;quot;rpm -Uvh --oldpackage *.rpm&amp;quot;
+$ yum --disablerepo=&amp;#39;*&amp;#39; list slurm
+
+# &amp;quot;[*]&amp;quot; maybe necessary
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;Pam&#34;&gt;&lt;a href=&#34;#Pam&#34; class=&#34;headerlink&#34; title=&#34;Pam&#34;&gt;&lt;/a&gt;Pam&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;Config1&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;vim&lt;/span&gt; /etc/slurm/slurm.conf&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#TaskPlugin=task/affinity&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token assign-left variable&#34;&gt;TaskPlugin&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;task/cgroup&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token assign-left variable&#34;&gt;PrologFlags&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;contain&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ vim /etc/slurm/slurm.conf
+
+#TaskPlugin=task/affinity
+TaskPlugin=task/cgroup
+PrologFlags=contain
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Config2&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;vim&lt;/span&gt; /etc/pam.d/sshd&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;account    sufficient    pam_listfile.so &lt;span class=&#34;token assign-left variable&#34;&gt;item&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;user &lt;span class=&#34;token assign-left variable&#34;&gt;sense&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;allow &lt;span class=&#34;token assign-left variable&#34;&gt;onerr&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;fail &lt;span class=&#34;token assign-left variable&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;/etc/ssh/slurm_allowed_users&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token parameter variable&#34;&gt;-account&lt;/span&gt;    required      pam_slurm_adopt.so&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ vim /etc/pam.d/sshd
+
+account    sufficient    pam_listfile.so item=user sense=allow onerr=fail file=/etc/ssh/slurm_allowed_users
+-account    required      pam_slurm_adopt.so
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Config3&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;vim&lt;/span&gt; /etc/pam.d/password-auth&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#account    sufficient    pam_localuser.so&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#-session   optional      pam_systemd.so&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;# scp from master node to slave nodes&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;scp&lt;/span&gt; /etc/slurm/slurm.conf nodeXX:/etc/slurm/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;scp&lt;/span&gt; /etc/pam.d/sshd nodeXX:/etc/pam.d/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;scp&lt;/span&gt; /etc/pam.d/password-auth nodeXX:/etc/pam.d/password-auth&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ vim /etc/pam.d/password-auth
+
+#account    sufficient    pam_localuser.so
+#-session   optional      pam_systemd.so
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;# scp from master node to slave nodes&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ scp /etc/slurm/slurm.conf nodeXX:/etc/slurm/
+$ scp /etc/pam.d/sshd nodeXX:/etc/pam.d/
+$ scp /etc/pam.d/password-auth nodeXX:/etc/pam.d/password-auth
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Restart&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl restart sshd.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zbHVybS5zY2hlZG1kLmNvbS9hcmNoaXZlL3NsdXJtLTIwLjAyLjcvcGFtX3NsdXJtX2Fkb3B0Lmh0bWw=&#34;&gt;Reference2&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMxOTEwNjEzL2FydGljbGUvZGV0YWlscy8xMDMzMzg3NTg=&#34;&gt;Reference3&lt;/span&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;issues&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#issues&#34;&gt;#&lt;/a&gt; Issues&lt;/h2&gt;
-&lt;p&gt;⚠️ &lt;strong&gt;Error&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Failed to start MUNGE authentication service.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;🔧 &lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ systemctl restart sshd.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zbHVybS5zY2hlZG1kLmNvbS9hcmNoaXZlL3NsdXJtLTIwLjAyLjcvcGFtX3NsdXJtX2Fkb3B0Lmh0bWw=&#34;&gt;Reference2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMxOTEwNjEzL2FydGljbGUvZGV0YWlscy8xMDMzMzg3NTg=&#34;&gt;Reference3&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;Issues&#34;&gt;&lt;a href=&#34;#Issues&#34; class=&#34;headerlink&#34; title=&#34;Issues&#34;&gt;&lt;/a&gt;Issues&lt;/h2&gt;&lt;p&gt;⚠️ &lt;strong&gt;Error&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;Failed to start MUNGE authentication service.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;🔧 &lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Check time sync status&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl stop ntpd.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ntpd &lt;span class=&#34;token parameter variable&#34;&gt;-gq&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl start ntpd.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ systemctl stop ntpd.service
+$ ntpd -gq
+$ systemctl start ntpd.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Check munge folder&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# check if /var/run/munge is missing&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;mkdir&lt;/span&gt; /var/run/munge&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;chown&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-R&lt;/span&gt; munge:munge /var/run/munge/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl restart munge.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl restart slurmd.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;# check if /var/run/munge is missing
+$ mkdir /var/run/munge
+$ chown -R munge:munge /var/run/munge/
+$ systemctl restart munge.service
+$ systemctl restart slurmd.service
+&lt;/code&gt;&lt;/pre&gt;
+</content>
         <category term="Server" scheme="https://www.xuwanxing.space/categories/server/" />
         <category term="Maintenance" scheme="https://www.xuwanxing.space/categories/server/maintenance/" />
         <category term="Linux" scheme="https://www.xuwanxing.space/tags/Linux/" />
@@ -137,48 +324,89 @@
         <updated>2022-10-14T16:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.xuwanxing.space/server/maintenance/User/</id>
-        <title>User and group</title>
-        <link rel="alternate" href="https://www.xuwanxing.space/server/maintenance/User/"/>
-        <content type="html">&lt;h2 id=&#34;create&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create&#34;&gt;#&lt;/a&gt; Create&lt;/h2&gt;
-&lt;p&gt;# on master node&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;useradd&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-m&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-d&lt;/span&gt; /public/user &lt;span class=&#34;token parameter variable&#34;&gt;-g&lt;/span&gt; group user&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;passwd&lt;/span&gt; user&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# ssh authorized key&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;su&lt;/span&gt; - user&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh-keygen&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; ~/.ssh&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;cp&lt;/span&gt; id_rsa.pub authorized_keys&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;chmod&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;700&lt;/span&gt; authorized_keys&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# sync&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; /var/yp&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;make&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;delete&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#delete&#34;&gt;#&lt;/a&gt; Delete&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;userdel&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-r&lt;/span&gt; user&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# from group&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ gpasswd &lt;span class=&#34;token parameter variable&#34;&gt;-d&lt;/span&gt; user group&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;modify&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#modify&#34;&gt;#&lt;/a&gt; Modify&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# add to group&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;usermod&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-a&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-G&lt;/span&gt; group user&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# set uid and gid&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;usermod&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-u&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1111&lt;/span&gt; testuser   &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;groupmod&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-g&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1112&lt;/span&gt; testgroup&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="Server" scheme="https://www.xuwanxing.space/categories/server/" />
-        <category term="Maintenance" scheme="https://www.xuwanxing.space/categories/server/maintenance/" />
-        <category term="Linux" scheme="https://www.xuwanxing.space/tags/Linux/" />
-        <updated>2022-10-14T16:00:00.000Z</updated>
-    </entry>
-    <entry>
         <id>https://www.xuwanxing.space/server/maintenance/Basic_commands/</id>
         <title>Basic commands</title>
         <link rel="alternate" href="https://www.xuwanxing.space/server/maintenance/Basic_commands/"/>
-        <content type="html">&lt;h2 id=&#34;check-hardware-info&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#check-hardware-info&#34;&gt;#&lt;/a&gt; Check hardware info&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;cat&lt;/span&gt; /etc/centos-release  &lt;span class=&#34;token comment&#34;&gt;# version&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ lspci &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;grep&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-i&lt;/span&gt; nvidia  &lt;span class=&#34;token comment&#34;&gt;# gpu&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;uname&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-a&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# kernel&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ lshw &lt;span class=&#34;token parameter variable&#34;&gt;-html&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; /hardware.html  &lt;span class=&#34;token comment&#34;&gt;# print all info&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ lscpu  &lt;span class=&#34;token comment&#34;&gt;# cpu info&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;cat&lt;/span&gt; /proc/cpuinfo &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;grep&lt;/span&gt; name &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;cut&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-f2&lt;/span&gt; -d: &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;uniq&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-c&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# cpu parameters&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;cat&lt;/span&gt; /proc/cpuinfo&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;grep&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;physical id&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sort&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;uniq&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;wc&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# physical cpus &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;cat&lt;/span&gt; /proc/cpuinfo&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;grep&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;cpu cores&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;uniq&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# no.cores&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;cat&lt;/span&gt; /proc/cpuinfo&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;grep&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;processor&#34;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;wc&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# virtual cpus&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;cat&lt;/span&gt; /proc/meminfo &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;grep&lt;/span&gt; MemTotal  &lt;span class=&#34;token comment&#34;&gt;# memory&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;fdisk&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;grep&lt;/span&gt; Disk  &lt;span class=&#34;token comment&#34;&gt;# disk info&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ lsscsi  &lt;span class=&#34;token comment&#34;&gt;# SSD&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;switch-to-multi-user-mode&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#switch-to-multi-user-mode&#34;&gt;#&lt;/a&gt; Switch to multi-user mode&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl get-default &lt;span class=&#34;token comment&#34;&gt;# graphical.target is useless&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl stop gdm.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl set-default multi-user.target&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93aWtpLmRlYmlhbi5vcmcvR0RNI3N5c3RlbWQ=&#34;&gt;Reference1&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;empty-the-buffers-and-cache&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#empty-the-buffers-and-cache&#34;&gt;#&lt;/a&gt; Empty the buffers and cache&lt;/h2&gt;
-&lt;p&gt;# To clear the swap:&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ swapoff /dev/dm-1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;swapon&lt;/span&gt; /dev/dm-1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;swapon&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-s&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly91bml4LnN0YWNrZXhjaGFuZ2UuY29tL3F1ZXN0aW9ucy84NzkwOC9ob3ctZG8teW91LWVtcHR5LXRoZS1idWZmZXJzLWFuZC1jYWNoZS1vbi1hLWxpbnV4LXN5c3RlbQ==&#34;&gt;Reference2&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;yum&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#yum&#34;&gt;#&lt;/a&gt; Yum&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ yumdownloader packagename &lt;span class=&#34;token comment&#34;&gt;# off-line install&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ yum &lt;span class=&#34;token parameter variable&#34;&gt;--disablerepo&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;*&#39;&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; rpm-package&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;file-operation&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#file-operation&#34;&gt;#&lt;/a&gt; File operation&lt;/h2&gt;
-&lt;p&gt;# Permission&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;chmod&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-R&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;700&lt;/span&gt; ./file&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;chown&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-R&lt;/span&gt; user:group ./file&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;# Move&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# copy all the files including hidden files&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;cp&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-a&lt;/span&gt; /old/. /folder/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;# Download&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# background, continue, input, output&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;wget&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-bc&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-i&lt;/span&gt; url.list &lt;span class=&#34;token parameter variable&#34;&gt;-o&lt;/span&gt; log.txt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# advanced options: -r recursive //-np no-parent //-4 connect only to IPv4 addresses.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# write output to a file named as the remote file&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-O&lt;/span&gt; http://file&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;# compress &amp;amp; uncompress&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;tar&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-zxvf&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-C&lt;/span&gt; /dir &lt;span class=&#34;token comment&#34;&gt;# -C uncompress to directory //-z for gzip //-j for bzip&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;unzip&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-d&lt;/span&gt; ./dir &lt;span class=&#34;token comment&#34;&gt;# -d uncompress to directory&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;tar&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-cfz&lt;/span&gt; archive.tar.gz file1 file2 file3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;tar&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-czPf&lt;/span&gt; archive.tar.gz /file_dir &lt;span class=&#34;token parameter variable&#34;&gt;-C&lt;/span&gt; /outdir  &lt;span class=&#34;token comment&#34;&gt;# -P don&#39;t strip leading `/&#39;s from file names&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;sync-time&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sync-time&#34;&gt;#&lt;/a&gt; Sync time&lt;/h2&gt;
-&lt;p&gt;# on master node&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;date&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-s&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;2021-11-22 13:15:43&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ clock &lt;span class=&#34;token parameter variable&#34;&gt;-w&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl restart ntpd.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;# wait for a while&lt;/p&gt;
+        <content type="html">&lt;h2 id=&#34;Check-hardware-info&#34;&gt;&lt;a href=&#34;#Check-hardware-info&#34; class=&#34;headerlink&#34; title=&#34;Check hardware info&#34;&gt;&lt;/a&gt;Check hardware info&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ cat /etc/centos-release  # version
+$ lspci | grep -i nvidia  # gpu
+$ uname -a  # kernel
+
+$ lshw -html &amp;gt; /hardware.html  # print all info
+$ lscpu  # cpu info
+$ cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c  # cpu parameters
+$ cat /proc/cpuinfo| grep &amp;quot;physical id&amp;quot;| sort| uniq| wc -l  # physical cpus 
+$ cat /proc/cpuinfo| grep &amp;quot;cpu cores&amp;quot;| uniq  # no.cores
+$ cat /proc/cpuinfo| grep &amp;quot;processor&amp;quot;| wc -l  # virtual cpus
+$ cat /proc/meminfo |grep MemTotal  # memory
+$ fdisk -l |grep Disk  # disk info
+$ lsscsi  # SSD
+$ lsof -i # list the process name and number that has opened the ports
+$ netstat -tulnp # see if a program or process is listening on a port, ready to accept a packet
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;Switch-to-multi-user-mode&#34;&gt;&lt;a href=&#34;#Switch-to-multi-user-mode&#34; class=&#34;headerlink&#34; title=&#34;Switch to multi-user mode&#34;&gt;&lt;/a&gt;Switch to multi-user mode&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ systemctl get-default # graphical.target is useless
+
+$ systemctl stop gdm.service
+$ systemctl set-default multi-user.target
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93aWtpLmRlYmlhbi5vcmcvR0RNI3N5c3RlbWQ=&#34;&gt;Reference1&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Empty-the-buffers-and-cache&#34;&gt;&lt;a href=&#34;#Empty-the-buffers-and-cache&#34; class=&#34;headerlink&#34; title=&#34;Empty the buffers and cache&#34;&gt;&lt;/a&gt;Empty the buffers and cache&lt;/h2&gt;&lt;p&gt;# To clear the swap:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ swapoff /dev/dm-1
+$ swapon /dev/dm-1
+$ swapon -s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly91bml4LnN0YWNrZXhjaGFuZ2UuY29tL3F1ZXN0aW9ucy84NzkwOC9ob3ctZG8teW91LWVtcHR5LXRoZS1idWZmZXJzLWFuZC1jYWNoZS1vbi1hLWxpbnV4LXN5c3RlbQ==&#34;&gt;Reference2&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Yum&#34;&gt;&lt;a href=&#34;#Yum&#34; class=&#34;headerlink&#34; title=&#34;Yum&#34;&gt;&lt;/a&gt;Yum&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ yumdownloader packagename # off-line install
+$ yum --disablerepo=&amp;#39;*&amp;#39; install rpm-package 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;File-operation&#34;&gt;&lt;a href=&#34;#File-operation&#34; class=&#34;headerlink&#34; title=&#34;File operation&#34;&gt;&lt;/a&gt;File operation&lt;/h2&gt;&lt;p&gt;# Permission&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ chmod -R 700 ./file
+$ chown -R user:group ./file
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;# Move&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;# copy all the files including hidden files
+$ cp -a /old/. /folder/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;# Download&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;# background, continue, input, output
+$ wget -bc -i url.list -o log.txt
+# advanced options: -r recursive //-np no-parent //-4 connect only to IPv4 addresses.
+
+# write output to a file named as the remote file
+$ curl -O http://file
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;# compress &amp;amp; uncompress&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ tar -zxvf file -C /dir # -C uncompress to directory //-z for gzip //-j for bzip
+$ unzip file -d ./dir # -d uncompress to directory
+
+$ tar -cfz archive.tar.gz file1 file2 file3
+$ tar -czPf archive.tar.gz /file_dir -C /outdir  # -P don&amp;#39;t strip leading `/&amp;#39;s from file names
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;Sync-time&#34;&gt;&lt;a href=&#34;#Sync-time&#34; class=&#34;headerlink&#34; title=&#34;Sync time&#34;&gt;&lt;/a&gt;Sync time&lt;/h2&gt;&lt;p&gt;# on master node&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ date -s &amp;quot;2021-11-22 13:15:43&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ clock -w
+$ systemctl restart ntpd.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;# wait for a while&lt;/p&gt;
 &lt;p&gt;# on slave node&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl stop ntpd.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ntpd &lt;span class=&#34;token parameter variable&#34;&gt;-gq&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ systemctl start ntpd.service&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2trLmJpZ2VyLm1lL3RpbWUucGhw&#34;&gt;Reference3&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;sudo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sudo&#34;&gt;#&lt;/a&gt; Sudo&lt;/h2&gt;
-&lt;p&gt;# add a sudoer&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;username       &lt;span class=&#34;token assign-left variable&#34;&gt;ALL&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;root&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;      /usr/sbin/*,/sbin/*,/usr/bin/*,&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;/usr/bin/passwd,&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;/usr/sbin/visudo,&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;/usr/sbin/useradd,&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;/usr/sbin/userdel,&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;/usr/sbin/reboot,&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;/usr/sbin/poweroff,&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;/usr/sbin/shutdown&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VsaXphYmV0aHh4eS9hcnRpY2xlL2RldGFpbHMvMTA4NjgyODkz&#34;&gt;Reference4&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ systemctl stop ntpd.service
+$ ntpd -gq
+$ systemctl start ntpd.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2trLmJpZ2VyLm1lL3RpbWUucGhw&#34;&gt;Reference3&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Sudo&#34;&gt;&lt;a href=&#34;#Sudo&#34; class=&#34;headerlink&#34; title=&#34;Sudo&#34;&gt;&lt;/a&gt;Sudo&lt;/h2&gt;&lt;p&gt;# add a sudoer&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;username       ALL=(root)      /usr/sbin/*,/sbin/*,/usr/bin/*,!/usr/bin/passwd,!/usr/sbin/visudo,!/usr/sbin/useradd,!/usr/sbin/userdel,!/usr/sbin/reboot,!/usr/sbin/poweroff,!/usr/sbin/shutdown
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VsaXphYmV0aHh4eS9hcnRpY2xlL2RldGFpbHMvMTA4NjgyODkz&#34;&gt;Reference4&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93ZW5rdS5iYWlkdS5jb20vdmlldy8xYzFiYTAwNWJmZDEyNmZmZjcwNWNjMTc1NTI3MDcyMjE5MmU1OWVhLmh0bWw=&#34;&gt;Reference5&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;history&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#history&#34;&gt;#&lt;/a&gt; History&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token builtin class-name&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;HISTTIMEFORMAT=&#34;%F %T &#34;&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt; /etc/profile&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token builtin class-name&#34;&gt;source&lt;/span&gt; /etc/profile&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC85OTgxODY2NA==&#34;&gt;Reference6&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;backup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#backup&#34;&gt;#&lt;/a&gt; Backup&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;rsync&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-zvh&lt;/span&gt; backup.tar /tmp/backups/ &lt;span class=&#34;token comment&#34;&gt;# cp file&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;rsync&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-avzh&lt;/span&gt; /root/rpmpkgs /tmp/backups/ &lt;span class=&#34;token comment&#34;&gt;# cp dir&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20va2VsYW1veXVqdXpoZW4vcC8xMDA4OTQ1NC5odG1s&#34;&gt;Reference7&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;History&#34;&gt;&lt;a href=&#34;#History&#34; class=&#34;headerlink&#34; title=&#34;History&#34;&gt;&lt;/a&gt;History&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ echo &amp;#39;HISTTIMEFORMAT=&amp;quot;%F %T &amp;quot;&amp;#39; &amp;gt;&amp;gt; /etc/profile
+$ source /etc/profile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC85OTgxODY2NA==&#34;&gt;Reference6&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Backup&#34;&gt;&lt;a href=&#34;#Backup&#34; class=&#34;headerlink&#34; title=&#34;Backup&#34;&gt;&lt;/a&gt;Backup&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ rsync -zvh backup.tar /tmp/backups/ # cp file
+$ rsync -avzh /root/rpmpkgs /tmp/backups/ # cp dir
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20va2VsYW1veXVqdXpoZW4vcC8xMDA4OTQ1NC5odG1s&#34;&gt;Reference7&lt;/span&gt;&lt;/p&gt;
 </content>
         <category term="Server" scheme="https://www.xuwanxing.space/categories/server/" />
         <category term="Maintenance" scheme="https://www.xuwanxing.space/categories/server/maintenance/" />
@@ -190,18 +418,45 @@
         <title>About hexo</title>
         <link rel="alternate" href="https://www.xuwanxing.space/project/About_hexo/"/>
         <content type="html">&lt;p&gt;This is a post about how to install &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt; on server and pull the repository to github.&lt;/p&gt;
-&lt;h2 id=&#34;install-hexo-on-server&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#install-hexo-on-server&#34;&gt;#&lt;/a&gt; Install hexo on server&lt;/h2&gt;
-&lt;h3 id=&#34;create-a-conda-environment&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-conda-environment&#34;&gt;#&lt;/a&gt; Create a conda environment&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ conda create &lt;span class=&#34;token parameter variable&#34;&gt;-n&lt;/span&gt; hexo-env&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;install-dependent-packages&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#install-dependent-packages&#34;&gt;#&lt;/a&gt; Install dependent packages&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ conda activate hexo-env&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ conda &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-c&lt;/span&gt; conda-forge nodejs&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ conda &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-c&lt;/span&gt; conda-forge &lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;install-hexo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#install-hexo&#34;&gt;#&lt;/a&gt; Install hexo&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-g&lt;/span&gt; hexo-cli&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-deployer-git &lt;span class=&#34;token parameter variable&#34;&gt;--save&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;set-git-config-and-ssh-key&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#set-git-config-and-ssh-key&#34;&gt;#&lt;/a&gt; Set git config and ssh key&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; user.name &lt;span class=&#34;token string&#34;&gt;&#34;github user name&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; user.email &lt;span class=&#34;token string&#34;&gt;&#34;github user email&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ ssh-keygen &lt;span class=&#34;token parameter variable&#34;&gt;-t&lt;/span&gt; rsa &lt;span class=&#34;token parameter variable&#34;&gt;-C&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;github user email&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# then copy the content of id_rsa.pub, save as a ssh key of github account&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# check the connection to github&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;ssh&lt;/span&gt; git@github.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;init-hexo-website&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#init-hexo-website&#34;&gt;#&lt;/a&gt; Init hexo website&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# cd /path to website directory/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo init&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo g &lt;span class=&#34;token comment&#34;&gt;# generate static files&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo s &lt;span class=&#34;token comment&#34;&gt;# start a local server, should check the port number&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo d &lt;span class=&#34;token comment&#34;&gt;# deploy website&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;hr /&gt;
-&lt;h2 id=&#34;issues&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#issues&#34;&gt;#&lt;/a&gt; Issues&lt;/h2&gt;
-&lt;p&gt;⚠️ &lt;strong&gt;Error&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;fatal: unable to access &lt;span class=&#34;token string&#34;&gt;&#39;https://github.com/example/website/&#39;&lt;/span&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;:&lt;/span&gt; OpenSSL SSL_read: error:0A000126:SSL routines::unexpected eof &lt;span class=&#34;token keyword&#34;&gt;while&lt;/span&gt; reading, errno &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;FATAL &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  err: Error: Spawn failed&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      at ChildProcess.&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;anonymous&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;/example/website/node_modules/hexo-util/lib/spawn.js:51:21&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      at ChildProcess.emit &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;node:events:513:28&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      at ChildProcess._handle.onexit &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;node:internal/child_process:291:12&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    code: &lt;span class=&#34;token number&#34;&gt;128&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; Something&#39;s wrong. Maybe you can &lt;span class=&#34;token function&#34;&gt;find&lt;/span&gt; the solution here: %s https://hexo.io/docs/troubleshooting.html&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;🔧 &lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo config deploy.repository git@github.com:&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;github name&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;/&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;repository&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcy8yNzc4&#34;&gt;Reference1&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3p4MTU2OTU1L2FydGljbGUvZGV0YWlscy8xMjExMjA2MTM=&#34;&gt;Reference2&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Install-hexo-on-server&#34;&gt;&lt;a href=&#34;#Install-hexo-on-server&#34; class=&#34;headerlink&#34; title=&#34;Install hexo on server&#34;&gt;&lt;/a&gt;Install hexo on server&lt;/h2&gt;&lt;h3 id=&#34;Create-a-conda-environment&#34;&gt;&lt;a href=&#34;#Create-a-conda-environment&#34; class=&#34;headerlink&#34; title=&#34;Create a conda environment&#34;&gt;&lt;/a&gt;Create a conda environment&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ conda create -n hexo-env
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;Install-dependent-packages&#34;&gt;&lt;a href=&#34;#Install-dependent-packages&#34; class=&#34;headerlink&#34; title=&#34;Install dependent packages&#34;&gt;&lt;/a&gt;Install dependent packages&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ conda activate hexo-env
+$ conda install -c conda-forge nodejs
+$ conda install -c conda-forge git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;Install-hexo&#34;&gt;&lt;a href=&#34;#Install-hexo&#34; class=&#34;headerlink&#34; title=&#34;Install hexo&#34;&gt;&lt;/a&gt;Install hexo&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ npm install -g hexo-cli
+$ npm install hexo-deployer-git --save
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;Set-git-config-and-ssh-key&#34;&gt;&lt;a href=&#34;#Set-git-config-and-ssh-key&#34; class=&#34;headerlink&#34; title=&#34;Set git config and ssh key&#34;&gt;&lt;/a&gt;Set git config and ssh key&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ git config --global user.name &amp;quot;github user name&amp;quot;
+$ git config --global user.email &amp;quot;github user email&amp;quot;
+$ ssh-keygen -t rsa -C &amp;quot;github user email&amp;quot;
+# then copy the content of id_rsa.pub, save as a ssh key of github account
+# check the connection to github
+$ ssh git@github.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;Init-hexo-website&#34;&gt;&lt;a href=&#34;#Init-hexo-website&#34; class=&#34;headerlink&#34; title=&#34;Init hexo website&#34;&gt;&lt;/a&gt;Init hexo website&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;# cd /path to website directory/
+$ hexo init
+$ npm install
+$ hexo g # generate static files
+$ hexo s # start a local server, should check the port number
+$ hexo d # deploy website
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;Issues&#34;&gt;&lt;a href=&#34;#Issues&#34; class=&#34;headerlink&#34; title=&#34;Issues&#34;&gt;&lt;/a&gt;Issues&lt;/h2&gt;&lt;p&gt;⚠️ &lt;strong&gt;Error&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;fatal: unable to access &amp;#39;https://github.com/example/website/&amp;#39;: OpenSSL SSL_read: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+FATAL &amp;#123;
+  err: Error: Spawn failed
+      at ChildProcess.&amp;lt;anonymous&amp;gt; (/example/website/node_modules/hexo-util/lib/spawn.js:51:21)
+      at ChildProcess.emit (node:events:513:28)
+      at ChildProcess._handle.onexit (node:internal/child_process:291:12) &amp;#123;
+    code: 128
+  &amp;#125;
+&amp;#125; Something&amp;#39;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;🔧 &lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ hexo config deploy.repository git@github.com:[github name]/[repository]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcy8yNzc4&#34;&gt;Reference1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3p4MTU2OTU1L2FydGljbGUvZGV0YWlscy8xMjExMjA2MTM=&#34;&gt;Reference2&lt;/span&gt;&lt;/p&gt;
 </content>
         <category term="Project" scheme="https://www.xuwanxing.space/categories/project/" />
         <category term="Hexo" scheme="https://www.xuwanxing.space/tags/Hexo/" />
