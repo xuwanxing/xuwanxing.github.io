@@ -1,5 +1,5 @@
 https://www.xuwanxing.space/project/software/aliyun_baiduyun/
-https://www.xuwanxing.space/project/software/vcftools/
-https://www.xuwanxing.space/project/software/bedtools/
-https://www.xuwanxing.space/server/maintenance/NIS/
+https://www.xuwanxing.space/server/maintenance/Samba/
 https://www.xuwanxing.space/server/maintenance/User/
+https://www.xuwanxing.space/server/maintenance/NIS/
+https://www.xuwanxing.space/server/maintenance/Slurm/
