@@ -2,16 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.xuwanxing.space/project/software/aliyun_baiduyun/</loc>
+    <loc>https://www.xuwanxing.space/server/maintenance/Basic_commands/</loc>
     
-    <lastmod>2022-12-21</lastmod>
+    <lastmod>2023-02-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.xuwanxing.space/server/maintenance/Basic_commands/</loc>
+    <loc>https://www.xuwanxing.space/server/maintenance/User/</loc>
+    
+    <lastmod>2023-02-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/project/software/aliyun_baiduyun/</loc>
     
     <lastmod>2022-12-21</lastmod>
     
@@ -65,15 +74,6 @@
   </url>
   
   <url>
-    <loc>https://www.xuwanxing.space/server/maintenance/User/</loc>
-    
-    <lastmod>2022-10-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xuwanxing.space/server/maintenance/Samba/</loc>
     
     <lastmod>2022-10-15</lastmod>
@@ -94,7 +94,7 @@
 
   <url>
     <loc>https://www.xuwanxing.space/</loc>
-    <lastmod>2023-01-12</lastmod>
+    <lastmod>2023-02-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -102,63 +102,63 @@
   
   <url>
     <loc>https://www.xuwanxing.space/tags/Hexo/</loc>
-    <lastmod>2023-01-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xuwanxing.space/tags/Linux/</loc>
-    <lastmod>2023-01-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xuwanxing.space/tags/Samba/</loc>
-    <lastmod>2023-01-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xuwanxing.space/tags/NIS/</loc>
-    <lastmod>2023-01-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xuwanxing.space/tags/Slurm/</loc>
-    <lastmod>2023-01-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xuwanxing.space/tags/vcftools/</loc>
-    <lastmod>2023-01-12</lastmod>
+    <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.xuwanxing.space/tags/bedtools/</loc>
-    <lastmod>2023-01-12</lastmod>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/tags/vcftools/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/tags/Linux/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/tags/NIS/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/tags/Samba/</loc>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/tags/Slurm/</loc>
+    <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.xuwanxing.space/tags/aliyun/</loc>
-    <lastmod>2023-01-12</lastmod>
+    <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.xuwanxing.space/tags/baiduyun/</loc>
-    <lastmod>2023-01-12</lastmod>
+    <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -167,28 +167,28 @@
   
   <url>
     <loc>https://www.xuwanxing.space/categories/project/</loc>
-    <lastmod>2023-01-12</lastmod>
+    <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.xuwanxing.space/categories/server/</loc>
-    <lastmod>2023-01-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xuwanxing.space/categories/server/maintenance/</loc>
-    <lastmod>2023-01-12</lastmod>
+    <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.xuwanxing.space/categories/project/software/</loc>
-    <lastmod>2023-01-12</lastmod>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xuwanxing.space/categories/server/maintenance/</loc>
+    <lastmod>2023-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
