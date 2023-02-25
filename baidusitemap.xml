@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.xuwanxing.space/server/maintenance/Basic_commands/</loc>
-    <lastmod>2023-02-15</lastmod>
+    <loc>https://www.xuwanxing.space/server/maintenance/User/</loc>
+    <lastmod>2023-02-25</lastmod>
   </url>
   <url>
-    <loc>https://www.xuwanxing.space/server/maintenance/User/</loc>
+    <loc>https://www.xuwanxing.space/server/maintenance/Slurm/</loc>
+    <lastmod>2023-02-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.xuwanxing.space/server/maintenance/Basic_commands/</loc>
     <lastmod>2023-02-15</lastmod>
   </url>
   <url>
@@ -18,10 +22,6 @@
   </url>
   <url>
     <loc>https://www.xuwanxing.space/project/software/vcftools/</loc>
-    <lastmod>2022-10-16</lastmod>
-  </url>
-  <url>
-    <loc>https://www.xuwanxing.space/server/maintenance/Slurm/</loc>
     <lastmod>2022-10-16</lastmod>
   </url>
   <url>
