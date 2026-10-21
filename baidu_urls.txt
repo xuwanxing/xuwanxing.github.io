@@ -1,0 +1,5 @@
+https://xuwanxing.github.io/hello-world/
+https://xuwanxing.github.io/project/software/aliyun_baiduyun/
+https://xuwanxing.github.io/project/software/vcftools/
+https://xuwanxing.github.io/project/software/bedtools/
+https://xuwanxing.github.io/server/maintenance/Slurm/
